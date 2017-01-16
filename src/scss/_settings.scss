@@ -1,0 +1,39 @@
+
+$md: 37em;
+$lg: 48em;
+$xl: 60em;
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/4, // The size of a gutter in relation to a single column
+);
+
+.container {
+  max-width: 100%;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  @include breakpoint($md) {
+    max-width: $md;
+  }
+  @include breakpoint($lg) {
+    max-width: $lg;
+  }
+  @include breakpoint($xl) {
+    max-width: $xl;
+  }
+}
+
+
+//COLORS
+
+$green: rgb(28,142,68);
+$blue: rgb(33, 62, 150);
+$white: rgb(255, 255, 255);
+$black: rgb(35, 31, 32);

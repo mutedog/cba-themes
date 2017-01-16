@@ -1,0 +1,23 @@
+{
+  "name": "cba-mtings",
+  "description": "CBA Meeting themes",
+  "main": "index.html",
+  "authors": [
+    "Matt Spaanem <spaanem@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "americollectpay.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0",
+    "normalize-css": "normalize.css#^4.2.0",
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.1"
+  }
+}
