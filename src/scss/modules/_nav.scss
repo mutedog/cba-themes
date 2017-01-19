@@ -1,12 +1,18 @@
 .nav {
   display: block;
-  margin-top: -5em;
-  margin-bottom: 5em;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2em;
+  @include breakpoint($md) {
+    // margin-top: -5em;
+    
+  }
 }
 
   .nav__prev,
   .nav__next {
     display: block;
+    width: span(1 of 2);
     background-color: $blue;
     color: $white;
     font-weight: bold;
@@ -16,6 +22,10 @@
     transition: background-color, 0.25s;
     &:hover {
       background-color: $green;
+    }
+
+    @include breakpoint($md) {
+      width: auto;
     }
   }
   .nav__prev {
@@ -37,6 +47,7 @@
 
   .nav__next {
     float: right;
+    text-align: right;
     padding-right: 1.5em;
     &:after {
       content: "";
