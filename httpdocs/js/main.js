@@ -50,11 +50,13 @@ function updateMonth(newMonth) {
 $(document).ready(function() {
   updateMonth(month);
 
-  $('.nav__prev').click(function() {
+  $('.nav__prev').click(function(e) {
+    e.preventDefault();
     updateMonth(prevMonth);
   });
 
-  $('.nav__next').click(function() {
+  $('.nav__next').click(function(e) {
+    e.preventDefault();
     updateMonth(nextMonth);
   });
 });
